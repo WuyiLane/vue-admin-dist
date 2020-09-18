@@ -87,19 +87,19 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 
 ### 表单的输入绑定
-#### 你可以用 v-model 指令在表单 <input>、<textarea> 及 <select> 元素上创建双向数据绑定。它会根据控件类型自动选取正确的方法来更#### 新元素。尽管有些神奇，但 v-model 本质上不过是语法糖。它负责监听用户的输入事件以更新数据，并对一些极端场景进行一些特殊处理。
+#### 你可以用 v-model 指令在表单 <input>、<textarea> 及 <select> 元素上创建双向数据绑定。它会根据控件类型自动选取正确的方法来更 新元素。尽管有些神奇，但 v-model 本质上不过是语法糖。它负责监听用户的输入事件以更新数据，并对一些极端场景进行一些特殊处理。<br/>
 
 ### watch 侦听器
 
 #### 修饰符
 #### lazy  失去焦点后
 #### number 自动转化为 数字
-#### trim   自动过滤用户输入的首尾空白字符
+#### trim   自动过滤用户输入的首尾空白字符 <br/>
 
 
 ### 组件技术
 #### 基本组件实例  template script style(lang 当前样式的语言 scoped 当前样式只能在当前组件里生效)
-#### 组件的使用 引入 注入 加载... data 必须是个纯函数，必须存在返回值，返回值必须存在状态 
+#### 组件的使用 引入 注入 加载... data 必须是个纯函数，必须存在返回值，返回值必须存在状态 <br/>
 
 ### 组件的复用性
 
@@ -115,12 +115,12 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ####  author: Object,//对象
 ####  callback: Function,//function
 ####  contactsPromise: Promise // or any other constructor //promise 类型
-#### }
+#### }<br/>
 
 ### 传递静态或动态 Prop
 #### <blog-post title="My journey with Vue"></blog-post>
 #### <!-- 动态赋予一个变量的值 -->
-#### <blog-post v-bind:title="post.title"></blog-post>
+#### <blog-post v-bind:title="post.title"></blog-post><br/>
 
 
 ###  单项数据流
@@ -129,7 +129,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 #### props验证 本身的验证
 
 #### Property or method "arrays" is not defined on the instance but referenced during render. Make sure that this property is reactive, either in the data option, or for class-based components, by initializing the property.
-#### 属性或方法“arrays”未在实例上定义，但在呈现期间被引用。通过初始化属性，确保此属性是被动的，无论是在data选项中，还是对于基于类的组件。
+#### 属性或方法“arrays”未在实例上定义，但在呈现期间被引用。通过初始化属性，确保此属性是被动的，无论是在data选项中，还是对于基于类的组件。<br/>
 
 ### 必须使用 使用工厂函数来返回这个默认值
 ####  default:function(){
@@ -168,14 +168,14 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ####       }
 ####     }
 ####   }
-####  })
+####  })<br/>
 
 ###  类型检查
-#### type 可以是下列原生构造函数中的一个：String Number Boolean Array Object Date Function ymbol
+#### type 可以是下列原生构造函数中的一个：String Number Boolean Array Object Date Function ymbol<br/>
 
 ### 自定义事件
 
-####  this.$emit('onEvent',this.msg)
+####  this.$emit('onEvent',this.msg)<br/>
 
 ###  插槽
 
@@ -185,7 +185,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ####  2. 不会影响其他内容的显示
 #### 3. 当你想在一个插槽中使用数据时 
 #### 父级模板里所有内容都是在父级作用域中编译的：
-#### 子模板里的所有内容都是在子作用域中编译的。
+#### 子模板里的所有内容都是在子作用域中编译的。<br/>
 
 #### 3.后备内容(默认值)
 
@@ -195,13 +195,13 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 #### 5. 作用域插槽
 #### 有时让插槽内容能够访问子组件中才有的数据是很有用的
 #### 6.解构插槽
-#### 具名插槽的缩写 2.6.0 新增
+#### 具名插槽的缩写 2.6.0 新增 <br/>
 
 ####   <template v-slot:header>
 ####         <p>
 ####           我是头部
 ####         </p>
-####       </template>
+####       </template><br/>
 
 #### 缩写 v-slot：=> #
 ####  <template #header>
