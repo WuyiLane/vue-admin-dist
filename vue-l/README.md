@@ -89,7 +89,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ### 表单的输入绑定
 #### 你可以用 v-model 指令在表单 <input>、<textarea> 及 <select> 元素上创建双向数据绑定。它会根据控件类型自动选取正确的方法来更新元素。尽管有些神奇，但 v-model 本质上不过是语法糖。它负责监听用户的输入事件以更新数据，并对一些极端场景进行一些特殊处理。
 
-#### watch 侦听器
+### watch 侦听器
 
 #### 修饰符
 #### lazy  失去焦点后
@@ -101,11 +101,11 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 #### 基本组件实例  template script style(lang 当前样式的语言 scoped 当前样式只能在当前组件里生效)
 #### 组件的使用 引入 注入 加载... data 必须是个纯函数，必须存在返回值，返回值必须存在状态 
 
-#### 组件的复用性
+### 组件的复用性
 
 ####   //  data 必须是一个纯函数,因为data是个纯函数，意味着组件每次被调用，都会创建一个新的组件 //要加同加 要减同减
 
-#### 组件中的传参 通过props 向子组件 传递数据
+### 组件中的传参 通过props 向子组件 传递数据
 
 #### props: {
 #### title: String, //字符串
@@ -117,13 +117,13 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ####  contactsPromise: Promise // or any other constructor //promise 类型
 #### }
 
-#### 传递静态或动态 Prop
+### 传递静态或动态 Prop
 #### <blog-post title="My journey with Vue"></blog-post>
 #### <!-- 动态赋予一个变量的值 -->
 #### <blog-post v-bind:title="post.title"></blog-post>
 
 
-#### 单项数据流
+###  单项数据流
 #### props 是单项的 只能父传子,不能子传父
 
 #### props验证 本身的验证
@@ -131,7 +131,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 #### Property or method "arrays" is not defined on the instance but referenced during render. Make sure that this property is reactive, either in the data option, or for class-based components, by initializing the property.
 #### 属性或方法“arrays”未在实例上定义，但在呈现期间被引用。通过初始化属性，确保此属性是被动的，无论是在data选项中，还是对于基于类的组件。
 
-#### 必须使用 使用工厂函数来返回这个默认值
+### 必须使用 使用工厂函数来返回这个默认值
 ####  default:function(){
 ####         return ['saitang','xiaosatang']
 ####       }  
@@ -170,14 +170,14 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ####   }
 ####  })
 
-#### 类型检查
+###  类型检查
 #### type 可以是下列原生构造函数中的一个：String Number Boolean Array Object Date Function ymbol
 
-#### 自定义事件
+### 自定义事件
 
 ####  this.$emit('onEvent',this.msg)
 
-#### 插槽
+###  插槽
 
 #### 传递结构类型
 #### 传递数据的方案，但是传递的是结构
