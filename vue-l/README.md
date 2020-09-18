@@ -20,27 +20,27 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-### {{}}
-### 双向绑定 只支持单行表达式 ，不支持多行表达式
-### 原始 HTML
+> {{}}
+> 双向绑定 只支持单行表达式 ，不支持多行表达式
+> 原始 HTML
 ####  <p v-html="moorth">
 ####      </p>
-### v-once指令 点击事件将只会触发一次
+>  v-once指令 点击事件将只会触发一次
 #### 只能赋值一次，不能被修改 .once 修饰符还能被用到自定义的组件事件上。 插值内容不会更新
 ####  特性
-#### v-bind
-### 缩写 v-on 等同于 @ v-bind 等同于 ：
+> v-bind
+> 缩写 v-on 等同于 @ v-bind 等同于 ：
 
-### 条件渲染
-#### v-if v-else 
-#### v-if 指令用于条件性地渲染一块内容。这块内容只会在指令的表达式返回 truthy 值的时候被渲染。
+> 条件渲染
+> v-if v-else 
+> v-if 指令用于条件性地渲染一块内容。这块内容只会在指令的表达式返回 truthy 值的时候被渲染。
 
-### v-for 列表渲染
-####  <li v-for="(item,name,index) in huwen" :key="index">{{name}}:{{item}}</li>
-### 数组更新检测
-#### 该方法会改变原数组
-#### 变异方法:( mutation method):push pop unshift shift splice() sort() reverse()
-#### 替换数组 做不到视图更新 原数组不变。
+> v-for 列表渲染
+## <li v-for="(item,name,index) in huwen" :key="index">{{name}}:{{item}}</li>
+## 数组更新检测
+## 该方法会改变原数组
+## 变异方法:( mutation method):push pop unshift shift splice() sort() reverse()
+## 替换数组 做不到视图更新 原数组不变。
 
 ### 对象的更新检测
 #### 由于 JavaScript 的限制，Vue 不能检测数组和对象的变化。添加与删除
@@ -86,10 +86,10 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 
 
-### 表单的输入绑定
-#### 你可以用 v-model 指令在表单 <input>、<textarea> 及 <select> 元素上创建双向数据绑定。它会根据控件类型自动选取正确的方法来更 新元素。尽管有些神奇，但 v-model 本质上不过是语法糖。它负责监听用户的输入事件以更新数据，并对一些极端场景进行一些特殊处理。<br/>
+## 表单的输入绑定
+### 你可以用 v-model 指令在表单 <input>、<textarea> 及 <select> 元素上创建双向数据绑定。它会根据控件类型自动选取正确的方法来更 新元素。尽管有些神奇，但 v-model 本质上不过是语法糖。它负责监听用户的输入事件以更新数据，并对一些极端场景进行一些特殊处理。<br/>
 
-### watch 侦听器
+## watch 侦听器
 
 #### 修饰符
 #### lazy  失去焦点后
