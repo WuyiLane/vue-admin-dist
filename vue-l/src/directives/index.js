@@ -9,3 +9,10 @@ Vue.directive(
         }
     }
 )
+Vue.filter('RMB',function (value) {
+    if(value){
+        return "￥" + value+'.00'
+    }else{
+        return value
+    }
+})

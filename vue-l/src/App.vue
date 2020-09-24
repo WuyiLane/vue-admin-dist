@@ -41,6 +41,9 @@
     <!-- Invalid prop: type check failed for prop "age". Expected Number with value NaN, got String with value "age".
     无效属性：属性“age”的类型检查失败。需要值为NaN的数字，而得到的字符串值为“age”。
  -->
+      <p v-red>我是自定义指令</p>
+      <p>{{20 | RMB}}</p>
+      <span>{{ 30 | filterA | RMB}}</span>
   </div>
 </template>
 
@@ -53,19 +56,33 @@ import Compsolt from './components/Compsolt'
 export default {
   name: 'App',
   //  注入组件,挂载到...
-  data(){
-    return{
-      age:20,
-      arrays:['xiaomao','xiaogou','xiaohua'],
-      current:'',//父传子
-      msg:'我是谁',
+  data() {
+    return {
+      age: 20,
+      arrays: ['xiaomao', 'xiaogou', 'xiaohua'],
+      current: '',//父传子
+      msg: '我是谁',
     }
   },
-  methods:{
+  methods: {
     //子传父传参
-    getsendHendler(data){
+    getsendHendler(data) {
       // console.log(data,"子传父的数据");
       this.current = data;
+    }
+  },
+  directives: {
+    red:{
+      inserted(el) {
+        el.style.color = 'red'
+      }
+    },
+  },
+  //局部过滤器
+  filters:{
+    filterA:function(value){
+      if(!value);
+      return "$" + value
     }
   },
   components:{
